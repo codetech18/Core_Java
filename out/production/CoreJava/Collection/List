@@ -1,0 +1,3 @@
+List Interface in Java is a way to store Ordered collection.
+It is an Ordered Collection of objects in which duplicate values can be stored.
+List Interface is found in java.util package and inherits thr Collection interface.

@@ -1,0 +1,43 @@
+Wildcards in Java are basically the question marks which we use in
+generic programming, it basically represents the unknown type.
+
+It can use the Java Wildcard as a local variable, parameter, field or
+as a return type. But, when the generic class is instantiated or when a
+generic method is called, we can’t use wildcards.
+
+Types of Wildcard in Java
+1. Upper Bounded Wildcards
+2. Lower Bounded Wildcards
+3. Unbounded Wildcards
+
+Upper bound Wildcard: ? extends Type.
+These wildcards can be used when you want to relax the restrictions on a variable.
+For example, say you want to write a method that works on List < Integer >,
+List < Double >, and List < Number >, you can do this using an upper bounded wildcard.
+
+To declare an upper-bounded wildcard, use the wildcard character (‘?’), followed by
+the extends keyword, followed by its upper bound.
+
+NOTE: All the wrapper classes (Integer, Long, Byte, Double, Float, Short)
+are subclasses of the abstract class Number.
+
+
+
+Lower Bounded Wildcards:
+It is expressed using the wildcard character (‘?’), followed by the super keyword,
+followed by its lower bound: <? super A>.
+
+
+Note: Use extend wildcard when you want to get values out of a structure and
+super wildcard when you put values in a structure. Don’t use wildcard when you
+get and put values in a structure. You can specify an upper bound for a wildcard,
+or you can specify a lower bound, but you cannot specify both.
+
+
+
+Unbounded Wildcard:
+This wildcard type is specified using the wildcard character (?), for example, List.
+This is called a list of unknown types. These are useful in the following cases –
+
+When writing a method that can be employed using functionality provided in Object class.
+When the code is using methods in the generic class that doesn’t depend on the type parameter
